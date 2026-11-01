@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAN BY ZORIUS - Signalement</title>
+    <style>
+        /* --- STYLE GLOBAL --- */
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto:wght@300;400;700&display=swap');
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-image: radial-gradient(circle at center, #1a0000 0%, #000 70%);
+        }
+
+        /* --- EN-TÊTE / LOGO --- */
+        .header {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: #d10000;
+            text-shadow: 0 0 10px rgba(209, 0, 0, 0.8);
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            font-size: 0.9rem;
+            color: #aaa;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* --- CONTENEUR PRINCIPAL --- */
+        .container {
+            background: rgba(20, 20, 20, 0.95);
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 30px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            margin-bottom: 40px;
+        }
+
+        /* --- LES CARTES DE MENU --- */
+        .menu-card {
+            border-left: 4px solid #d10000;
+            background: #111;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        .menu-card:hover {
+            transform: translateX(5px);
+            background: #1a1a1a;
+        }
+
+        .menu-card h3 {
+            margin: 0 0 5px 0;
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
+        .menu-card p {
+            margin: 0;
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        /* --- FORMULAIRE --- */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            background: #222;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #d10000;
+            box-shadow: 0 0 5px rgba(209, 0, 0, 0.5);
+        }
+
+        /* --- BOUTONS --- */
+        .btn-main {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(90deg, #d10000, #8b0000);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            margin-top: 10px;
+            font-family: 'Cinzel', serif;
+        }
+
+        .btn-main:hover {
+            background: linear-gradient(90deg, #ff0000, #b30000);
+            box-shadow: 0 0 15px rgba(209, 0, 0, 0.6);
+        }
+
+        /* --- WHATSAPP SECTION --- */
+        .whatsapp-section {
+            margin-top: 30px;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .whatsapp-section h4 {
+            color: #25D366;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .wa-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-wa {
+            flex: 1;
+            min-width: 100px;
+            padding: 10px;
+            background: #111;
+            border: 1px solid #25D366;
+            color: #25D366;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-wa:hover {
+            background: #25D366;
+            color: #000;
+        }
+
+        /* --- FOOTER --- */
+        .footer {
+            text-align: center;
+            color: #444;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête avec le nom du site -->
+    <div class="header">
+        <h1>BAN BY ZORIUS</h1>
+        <p>shisui x kartouzo</p>
+    </div>
+
+    <div class="container">
+        <!-- Liste des motifs -->
+        <div class="menu-card">
+            <h3>🚫 Spam</h3>
+            <p>Utilisateur envoyant des messages répétitifs à plusieurs personnes.</p>
+        </div>
+        <div class="menu-card">
+            <h3>⚠️ Scam</h3>
+            <p>Faux paiements, arnaques, phishing ou liens frauduleux.</p>
+        </div>
+        <div class="menu-card">
+            <h3>🤖 WhatsApp Mod</h3>
+            <p>Utilisation de bots automatisés ou version modifiée de WhatsApp.</p>
+        </div>
+
+        <!-- Le Formulaire de signalement -->
+        <form id="banForm">
+            <div class="form-group">
+                <label for="phoneNumber">Numéro de téléphone (à bannir) :</label>
+                <input type="tel" id="phoneNumber" placeholder="Ex: +243..." required>
+            </div>
+            
+            <!-- Bouton Principal -->
+            <button type="submit" class="btn-main">BAN BY ZORIUS</button>
+        </form>
+
+        <!-- Support WhatsApp -->
+        <div class="whatsapp-section">
+            <h4>Support WhatsApp (3 Numéros)</h4>
+            <div class="wa-buttons">
+                <!-- ⚠️ REMPLACE LES NUMÉROS ICI (Format international sans le +) -->
+                <a href="https://wa.me/243900000001" target="_blank" class="btn-wa">Support 1</a>
+                <a href="https://wa.me/243900000002" target="_blank" class="btn-wa">Support 2</a>
+                <a href="https://wa.me/243900000003" target="_blank" class="btn-wa">Support 3</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Zorius Tous Cours - Tous droits réservés.
+    </div>
+
+    <script>
+        // Script pour gérer l'envoi de l'e-mail
+        document.getElementById('banForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Empêche le rechargement de la page
+
+            // Récupérer le numéro entré
+            var phone = document.getElementById('phoneNumber').value;
+
+            // ⚠️ REMPLACE CETTE ADRESSE PAR TON VRAI EMAIL
+            var emailTo = "zorius.ban@gmail.com"; 
+
+            // Sujet de l'e-mail
+            var subject = "Demande de BAN - ZORIUS TOUS COURS";
+
+            // Corps du texte (Texte modifié pour s'adresser au Support WhatsApp)
+            var body = "Bonjour le Support WhatsApp,\n\n" +
+                       "Je vous contacte pour signaler et demander le bannissement du numéro suivant sur votre plateforme :\n" +
+                       "📞 NUMÉRO : " + phone + "\n\n" +
+                       "Motif : Non-respect des conditions d'utilisation (Spam / Scam / Utilisation de WhatsApp Mod).\n\n" +
+                       "Merci de bien vouloir traiter cette demande de signalement dans les plus brefs délais.\n\n" +
+                       "Cordialement,\n" +
+                       "Le service BAN BY ZORIUS";
+
+            // Création du lien mailto
+            var mailtoLink = "mailto:" + emailTo + 
+                             "?subject=" + encodeURIComponent(subject) + 
+                             "&body=" + encodeURIComponent(body);
+
+            // Ouvrir le client mail
+            window.location.href = mailtoLink;
+        });
+    </script>
+
+</body>
+</html>
